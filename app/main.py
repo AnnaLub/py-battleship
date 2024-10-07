@@ -118,9 +118,9 @@ class Battleship:
 
         for row, column in self.field:
             ship = self.field[row, column]
-            for x in range(-1, 2):
-                for y in range(-1, 2):
-                    next_cell = (row + x, column + y)
+            for x_cell in range(-1, 2):
+                for y_cell in range(-1, 2):
+                    next_cell = (row + x_cell, column + y_cell)
 
                     if (next_cell in self.field
                             and self.field[next_cell] != ship):
